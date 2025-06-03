@@ -39,12 +39,12 @@ class Son extends Father{
 修饰成员变量：
 
 ```java
-public final class Test
+public final class Test2
 {
   public static int totalNumber = 5;
   public final int ID;
 
-  public Test()
+  public Test2()
   {
     ID = ++totalNumber; // 可在构造器中给final修饰的“变量”赋值
   }
