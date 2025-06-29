@@ -8,7 +8,7 @@
 ### 2. final修饰方法
 
 - **`表示这个方法不能被子类重写。`**
-- 例如：Object类中的getClass()
+- 例如：Object类中的`getClass()`
 
 
 ```java
@@ -18,7 +18,7 @@ class Father{
 	}
 }
 class Son extends Father{
-	public void method(){//错误
+	public void method(){ // 错误
 		System.out.println("son");
 	}
 }
@@ -30,9 +30,9 @@ class Son extends Father{
 
 - 初始化要求
 
-  - **成员变量**：`final` 修饰的成员变量必须在声明时或构造方法中初始化。
+  - **成员变量**：`final`修饰的成员变量必须在声明时或构造方法中初始化。
 
-  - **静态变量**：`final static` 修饰的变量通常在声明时或静态初始化块中初始化。
+  - **静态变量**：`final static`修饰的变量通常在声明时或静态初始化块中初始化。
 
   - **局部变量**：在方法内部声明的 `final` 变量必须在使用前被赋值，且只能赋值一次。
 
